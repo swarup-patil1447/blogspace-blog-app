@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Login — InkWell</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body class="auth-body">
+  <a class="brand auth-brand" href="index.html"><span class="brand-mark">i</span> InkWell</a>
+  <main class="auth-layout">
+    <section class="auth-intro"><p class="eyebrow">WELCOME BACK</p><h1>Your next idea<br>is waiting.</h1><p>Sign in to manage your stories and keep your writing journey moving.</p><div class="quote-mark">“</div><blockquote>Writing is thinking. Make space for your thoughts.</blockquote></section>
+    <section class="auth-card"><p class="eyebrow">YOUR ACCOUNT</p><h2>Log in</h2><p class="muted">Welcome back to InkWell.</p>
+      <form id="loginForm">
+        <label for="loginEmail">Email address</label><input id="loginEmail" name="email" type="email" placeholder="you@example.com" required>
+        <label for="loginPassword">Password</label><input id="loginPassword" name="password" type="password" placeholder="Enter your password" required minlength="6">
+        <p class="form-message" id="loginMessage" aria-live="polite"></p>
+        <button class="button button-primary full-width" type="submit">Log in <span>→</span></button>
+      </form>
+      <p class="auth-switch">New to InkWell? <a href="register.html">Create an account</a></p>
+      <p class="demo-note">Demo project: account details are stored only in this browser.</p>
+    </section>
+  </main>
+</body>
+</html>

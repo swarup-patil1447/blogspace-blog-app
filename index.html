@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InkWell — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">i</span> InkWell</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="create-blog.html">Write a blog</a>
+      <a href="login.html" id="loginNav">Login</a>
+      <a class="nav-cta" href="register.html" id="registerNav">Get started</a>
+      <button class="link-button hidden" id="logoutButton">Log out</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">IDEAS WORTH SHARING</p>
+        <h1>Stories begin with<br><span>a single thought.</span></h1>
+        <p class="hero-description">A simple home for curious minds, practical lessons, and ideas that deserve to be read.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="create-blog.html">Write your story <span>↗</span></a>
+          <a class="button button-secondary" href="#latest">Explore stories</a>
+        </div>
+        <p class="hero-note"><span class="dot"></span> A small space for big ideas.</p>
+      </div>
+      <div class="hero-art" aria-label="Decorative abstract illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-paper"><div class="paper-top"></div><div class="paper-line long"></div><div class="paper-line"></div><div class="paper-line short"></div><div class="paper-stamp">WRITE<br>MORE</div></div>
+        <div class="art-sun"></div><div class="art-star">✳</div>
+      </div>
+    </section>
+
+    <section class="section latest-section" id="latest">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE JOURNAL</p><h2>Latest stories</h2></div>
+        <a class="text-link" href="dashboard.html">Manage your posts <span>→</span></a>
+      </div>
+      <div class="blog-grid" id="blogGrid"></div>
+      <p class="empty-state hidden" id="emptyState">No stories yet. Be the first to write one.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">i</span> InkWell</a><p>Made for ideas, learning, and sharing.</p><span>© <span id="year"></span> InkWell</span></footer>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Write a story — InkWell</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">i</span> InkWell</a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button><nav class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="dashboard.html">Dashboard</a><a class="active" href="create-blog.html">Write a blog</a><a href="login.html" id="loginNav">Login</a><a class="nav-cta" href="register.html" id="registerNav">Get started</a><button class="link-button hidden" id="logoutButton">Log out</button></nav></header>
+  <main class="editor-main">
+    <a href="dashboard.html" class="back-link">← Back to dashboard</a>
+    <div class="editor-heading"><p class="eyebrow">THE BLANK PAGE</p><h1>Write your story.</h1><p class="muted">A useful idea, a lesson learned, or something you cannot stop thinking about.</p></div>
+    <form class="editor-card" id="blogForm">
+      <label for="blogTitle">Story title</label><input id="blogTitle" name="title" type="text" maxlength="100" placeholder="Give your story a title..." required>
+      <div class="form-row"><div class="form-field"><label for="blogCategory">Category</label><select id="blogCategory" name="category"><option>Ideas</option><option>Technology</option><option>Learning</option><option>Career</option><option>Lifestyle</option><option>Personal</option></select></div><div class="form-field"><label for="blogAuthor">Author name</label><input id="blogAuthor" name="author" type="text" maxlength="50" placeholder="Your name" required></div></div>
+      <label for="blogExcerpt">Short summary</label><textarea id="blogExcerpt" name="excerpt" rows="2" maxlength="180" placeholder="Describe your story in one or two sentences..." required></textarea>
+      <label for="blogContent">Your story</label><textarea id="blogContent" name="content" class="content-input" rows="10" placeholder="Start writing here. Share your thoughts..." required minlength="30"></textarea>
+      <p class="editor-tip">TIP: You do not need a perfect first draft. Just begin.</p>
+      <p class="form-message" id="blogMessage" aria-live="polite"></p>
+      <div class="editor-actions"><a class="button button-secondary" href="dashboard.html">Cancel</a><button class="button button-primary" type="submit">Publish story <span>↗</span></button></div>
+    </form>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">i</span> InkWell</a><p>Made for ideas, learning, and sharing.</p><span>© <span id="year"></span> InkWell</span></footer>
+</body>
+</html>

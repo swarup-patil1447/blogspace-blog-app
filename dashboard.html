@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard — InkWell</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">i</span> InkWell</a><button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button><nav class="nav-links" id="navLinks"><a href="index.html">Home</a><a class="active" href="dashboard.html">Dashboard</a><a href="create-blog.html">Write a blog</a><a href="login.html" id="loginNav">Login</a><a class="nav-cta" href="register.html" id="registerNav">Get started</a><button class="link-button hidden" id="logoutButton">Log out</button></nav></header>
+  <main class="dashboard-main">
+    <div class="dashboard-heading"><div><p class="eyebrow">YOUR WORKSPACE</p><h1>Dashboard<span id="welcomeName"></span></h1><p class="muted">A clear view of everything you have written.</p></div><a class="button button-primary" href="create-blog.html">＋ New story</a></div>
+    <div class="stats-grid"><article class="stat-card"><span class="stat-icon">▤</span><p>Total stories</p><strong id="totalPosts">0</strong><span class="stat-foot">Published in your journal</span></article><article class="stat-card"><span class="stat-icon peach">✎</span><p>Your stories</p><strong id="myPosts">0</strong><span class="stat-foot">Written by your account</span></article><article class="stat-card"><span class="stat-icon green">◷</span><p>Latest activity</p><strong class="stat-word" id="latestActivity">—</strong><span class="stat-foot">Most recent story</span></article></div>
+    <section class="dashboard-list"><div class="section-heading"><div><p class="eyebrow">YOUR CONTENT</p><h2>All stories</h2></div><a class="text-link" href="index.html">View public page →</a></div><div id="dashboardPosts" class="dashboard-posts"></div><p class="empty-state hidden" id="dashboardEmpty">You have not published any stories yet. Start with a small idea.</p></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">i</span> InkWell</a><p>Made for ideas, learning, and sharing.</p><span>© <span id="year"></span> InkWell</span></footer>
+</body>
+</html>

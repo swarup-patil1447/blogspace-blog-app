@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Register — InkWell</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body class="auth-body">
+  <a class="brand auth-brand" href="index.html"><span class="brand-mark">i</span> InkWell</a>
+  <main class="auth-layout">
+    <section class="auth-intro"><p class="eyebrow">START SOMETHING</p><h1>Your voice<br>belongs here.</h1><p>Create an account, collect your thoughts, and publish your first story.</p><div class="quote-mark">✳</div><blockquote>Every expert was once a beginner who kept going.</blockquote></section>
+    <section class="auth-card"><p class="eyebrow">JOIN THE JOURNAL</p><h2>Create account</h2><p class="muted">It only takes a minute.</p>
+      <form id="registerForm">
+        <label for="registerName">Your name</label><input id="registerName" name="name" type="text" placeholder="Alex Morgan" required minlength="2">
+        <label for="registerEmail">Email address</label><input id="registerEmail" name="email" type="email" placeholder="you@example.com" required>
+        <label for="registerPassword">Password</label><input id="registerPassword" name="password" type="password" placeholder="At least 6 characters" required minlength="6">
+        <p class="form-message" id="registerMessage" aria-live="polite"></p>
+        <button class="button button-primary full-width" type="submit">Create account <span>→</span></button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+      <p class="demo-note">Demo project: do not use a real password. This is not production authentication.</p>
+    </section>
+  </main>
+</body>
+</html>
